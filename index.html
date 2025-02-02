@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>TIC TAC TOE</h1>
+        <p>A verry funny game</p>
+    </header>
+    <main id="main">
+        <div id="boardDisplay"></div>
+        <div class="gameConfig">
+            <div class="players">
+                <div class="player">Player 1</div>
+                <div class="player2Wrapper">
+                    <div class="player red" id="player2">COMPUTER</div>
+                    <div class="botLevels active">
+                        <div class="level active" data-level="4">Easy</div>
+                        <div class="level" data-level="10">Medium</div>
+                        <div class="level" data-level="Infinity">Impossible</div>
+                    </div>
+                </div>
+            </div>
+            <button class="resetButton">Reset</button>
+
+        </div>
+        <div class="endGame ">
+            <div class="filler"></div>
+            <p class="endGameText">Player two wins</p>
+            <button class="resetButton">Reset</button>
+        </div>
+
+    </main>
+</body>
+<script src="/scriptV3.js"></script>
+
+</html>

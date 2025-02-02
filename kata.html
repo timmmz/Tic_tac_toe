@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function averageString(str) {
+        // Code away
+        let somme = 0
+        const string = str.split(" ")
+        console.log(string)
+        string.forEach(number => {
+            switch (number) {
+                case "one":
+                    somme += 1
+                    break;
+                case "two":
+                    somme += 2
+                    break;
+                case "three":
+                    somme += 3
+                    break;
+                case "four":
+                    somme += 4
+                    break;
+                case "five":
+                    somme += 5
+                    break;
+                case "six":
+                    somme += 6
+                    break;
+                case "seven":
+                    somme += 7
+                    break;
+                case "eight":
+                    somme += 8
+                    break
+                case "nine":
+                    somme += 9
+                    break;
+                case "ten":
+                    somme += 10
+                    break;
+            }
+
+        })
+        console.log(somme)
+        let moy = somme / (string.length)
+        moy = Math.floor(moy)
+        return moy
+    }
+
+    averageString("zero nine five two")
+</script>
+
+</html>
